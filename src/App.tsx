@@ -29,6 +29,7 @@ import { ColorModeContextProvider, ColorModeContext } from "./contexts/color-mod
 import {AppSettingsProvider, useAppSettings} from "./contexts/app-settings";
 import { useContext, useRef, useEffect } from "react";
 import { Home } from "./pages/home";
+import { FollowUp } from "./pages/follow-up";
 import { Login } from "./pages/login";
 
 const AppContent = () => {
@@ -117,6 +118,7 @@ const AppContent = () => {
                     }
                   >
                     <Route index element={<Home />} />
+                    <Route path="/follow-up" element={<FollowUp />} />
                     <Route path="*" element={<ErrorComponent />} />
                   </Route>
                 </Routes>
